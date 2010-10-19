@@ -10937,7 +10937,7 @@ b2World.prototype.DrawDebugData = function () {
 			return;
 		}
 		
-		this.m_debugDraw.m_sprite.graphics.clear();
+		this.m_debugDraw.m_sprite.clearRect(0,0,this.m_debugDraw.m_sprite.canvas.width, this.m_debugDraw.m_sprite.canvas.height);
 		
 		var flags = this.m_debugDraw.GetFlags();
 		
